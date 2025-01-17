@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { Button } from "../ui/button"
 import { MoreHorizontal, MessageCircle, Mail, Github, HomeIcon } from "lucide-react" // Importa apenas ícones específicos que serão usados
-import * as Icons from "lucide-react" // Importa todos os ícones para renderização dinâmica
+import {Play } from "lucide-react" // Importa todos os ícones para renderização dinâmica
 import { useState } from "react"
 
 export default function ButtonGrid() {
@@ -36,22 +36,22 @@ export default function ButtonGrid() {
       <div className="grid grid-rows grid-cols-3 gap-3 my-0">
       <Link href={'https://youtube.com'}>
               <Button className="h-32 w-32 rounded-2xl border-zinc-800 border-2" variant="secondary">
-                
+                <Play/>
               </Button>
             </Link>
-            <Link href={'https://youtube.com'}>
+            <Link href={'https://web.whatsapp.com'}>
               <Button className="h-32 w-32 rounded-2xl border-zinc-800 border-2" variant="secondary">
-                
+                <MessageCircle/>
               </Button>
             </Link>
-            <Link href={'https://youtube.com'}>
+            <Link href={'https://gmail.com'}>
               <Button className="h-32 w-32 rounded-2xl border-zinc-800 border-2" variant="secondary">
-                
+                <Mail/>
               </Button>
             </Link>
-            <Link href={'https://youtube.com'}>
+            <Link href={'https://github.com'}>
               <Button className="h-32 w-32 rounded-2xl border-zinc-800 border-2" variant="secondary">
-                
+                <Github/>
               </Button>
             </Link>
       </div>

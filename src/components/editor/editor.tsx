@@ -4,6 +4,10 @@ import { useEditor, EditorContent, BubbleMenu, FloatingMenu } from '@tiptap/reac
 import StarterKit from '@tiptap/starter-kit'
 import { RxFontBold, RxFontItalic, RxStrikethrough, RxCode } from 'react-icons/rx'
 import { BubbleButton } from './BubbleButton'
+// Adicionar bibliotecas para geração de PDF e download
+import { jsPDF } from 'jspdf'
+import { Button } from '../ui/button'
+import { setConfig } from 'next/config'
 
 const Editor = () => {
   const editor = useEditor({
@@ -16,12 +20,41 @@ const Editor = () => {
     },
   })
 
+  // Função para salvar o conteúdo em um arquivo
+  const handleSaveFile = (type: 'pdf' | 'markdown' | 'txt') => {
+    if (!editor) return
+
+    const content = editor.getHTML()
+
+    if (type === 'pdf') {
+      const doc = new jsPDF()
+      doc.html(content, {
+        callback: () => {
+          doc.save('content.pdf')
+        },
+      })
+    } else {
+      const blob = new Blob([content], { type: 'text/plain' })
+      const url = URL.createObjectURL(blob)
+      const link = document.createElement('a')
+
+      link.href = url
+      link.download = `content.${type}`
+      link.click()
+
+      URL.revokeObjectURL(url)
+    }
+  }
+
   return (
-    <>
-      <EditorContent
-        className="min-w-full min-h-full ml-6 prose border-none"
-        editor={editor}
-      />
+    <div className="max-w-[60rem] mx-auto">
+      {/* Container com tamanho máximo e rolagem */}
+      <div className="max-h-[40rem] min-h-[40rem] overflow-auto border border-gray-300 rounded-md p-4">
+        <EditorContent
+          className="min-w-full min-h-full prose border-none"
+          editor={editor}
+        />
+      </div>
 
       {editor && (
         <>
@@ -98,9 +131,34 @@ const Editor = () => {
               <RxCode className="w-4 h-4" />
             </BubbleButton>
           </BubbleMenu>
+
+          {/* Botões para salvar arquivos */}
+          <div className="mt-4 flex gap-6 absolute bottom-8">
+            <Button
+              onClick={() => handleSaveFile('pdf')}
+              className="h-16 hover:bg-slate-950 hover:text-white transition-all px-4 py-2 rounded-2xl border-gray-400 border-2"
+              variant={'secondary'}
+            >
+              Save as PDF
+            </Button>
+            <Button
+              onClick={() => handleSaveFile('markdown')}
+              className="h-16 hover:bg-slate-950 hover:text-white transition-all px-4 py-2 rounded-2xl border-gray-400 border-2"
+              variant={'secondary'}
+            >
+              Save as Markdown
+            </Button>
+            <Button
+              onClick={() => handleSaveFile('txt')}
+              className="h-16 hover:bg-slate-950 hover:text-white transition-all px-4 py-2 rounded-2xl border-gray-400 border-2"
+              variant={'secondary'}
+            >
+              Save as TXT
+            </Button>
+          </div>
         </>
       )}
-    </>
+    </div>
   )
 }
 
