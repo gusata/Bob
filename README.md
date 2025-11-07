@@ -117,7 +117,8 @@ Abra em:
 - [ ] Sincronização opcional entre dispositivos  
 - [ ] Suporte a temas personalizados  
 - [ ] Exportar notas em Markdown  
-- [ ] Modo offline aprimorado  
+- [ ] Modo offline aprimorado
+- [ ] Adição de musicas de fundo
 
 ---
 
