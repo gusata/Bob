@@ -98,3 +98,49 @@ Abra em:
 - 💅 **TailwindCSS**
 - 🧠 **LocalStorage API**
 - 🔤 **ContentEditable** para o editor leve
+
+
+---
+
+## 💡 **Por que usar o Bob?**
+
+| Motivo | Descrição |
+|:--|:--|
+| 🚀 **Rápido** | Carrega instantaneamente |
+| 🗒️ **Funcional** | Notas com atalhos úteis |
+| 🔒 **Privado** | Sem login, sem nuvem |
+| 🖌️ **Estético** | Interface limpa e moderna |
+
+---
+
+## 🧩 **Futuras Melhorias**
+- [ ] Sincronização opcional entre dispositivos  
+- [ ] Suporte a temas personalizados  
+- [ ] Exportar notas em Markdown  
+- [ ] Modo offline aprimorado  
+
+---
+
+## 🤝 **Contribuindo**
+
+Pull requests são muito bem-vindos!
+
+1. Faça um fork do projeto
+2. Crie sua branch (`git checkout -b feature/nome-da-feature`)
+3. Commit suas alterações (`git commit -m 'Adiciona nova feature'`)
+4. Envie (`git push origin feature/nome-da-feature`)
+5. Abra um **Pull Request**
+
+---
+
+## 📜 **Licença**
+
+Este projeto é distribuído sob a licença **MIT**.  
+Sinta-se livre para usar, modificar e compartilhar.
+
+---
+
+## ✨ **Autor**
+
+Desenvolvido por [**Gustavo Galeazzi**](https://github.com/gusata)  
+💡 *"Simplicidade é o último grau de sofisticação."*
