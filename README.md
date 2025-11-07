@@ -1,41 +1,100 @@
-# bob
-## Bob is a Simple and Customizable start/homepage made to work on any browser, take fast notes and save in local storage.
+# 🧠 **Bob — Minimal & Customizable Start Page**
 
-![alt text](./public/print.png "Title")
+> **Bob** é uma página inicial simples, rápida e elegante para qualquer navegador.  
+> Tome notas instantaneamente, salve-as no **armazenamento local** e comece o dia com foco.
 
-## Usage
-### Bob has some of texting shortcuts simillar to Notion.
-### Try Type **`/`** in editor to show some **shortcuts**
+![Preview](./public/print.png)
 
-![alt text](./public/print2.png "Title")
+---
 
-This file contains instructions on how to use ***bob*** as a new tab page in your browser by leveraging the "New Tab Redirect" extension. The URL of the site is `https://bob-webpage.vercel.app/`.
+## 🚀 **Recursos Principais**
 
-## Setting Up the **bob** as a New Tab Page
+- 🗒️ **Editor de notas instantâneo** — anotações salvas automaticamente no navegador.
+- ⚡ **Atalhos de texto inteligentes** — digite `/` como no Notion para abrir comandos.
+- 🧩 **Totalmente personalizável** — adapte o visual e o comportamento.
+- 💾 **Sem conta ou backend** — tudo é salvo localmente.
+- 🌐 **Compatível com qualquer navegador** — desktop ou mobile.
+- 🎨 **Design minimalista e fluido** — foco total no que importa.
 
-To configure bob as your browser's new tab page:
+---
 
-1. **Install the "New Tab Redirect" Extension**
-   - Visit the extension store for your browser (e.g., Chrome Web Store or Firefox Add-ons).
-   - Search for "New Tab Redirect" and install the extension.
+## 🧰 **Instalação e Uso**
 
-2. **Configure the Extension**
-   - After installation, open the extension's settings. You can usually do this by clicking on the extension's icon in the toolbar and selecting "Options" or "Settings."
-   - In the settings, locate the field where you can specify the URL for the new tab page.
-   - Enter the URL of the site: `https://bob-webpage.vercel.app/`.
+### 🔗 1. Acesse o Bob
+Abra:  
+👉 [https://bob-webpage.vercel.app/](https://bob-webpage.vercel.app/)
 
-3. **Save Your Changes**
-   - Click the "Save" or "Apply" button in the extension settings to confirm the new tab redirection.
+### 🧭 2. Configure o Bob como sua página “Nova Guia”
+Para isso, use a extensão **New Tab Redirect**:
 
-4. **Test the Configuration**
-   - Open a new tab in your browser.
-   - The bob page (`https://bob-webpage.vercel.app/`) should load automatically.
+#### 🧩 Passos:
 
-## Benefits of Using the bob as a New Tab Page
+1. **Instale a extensão**
+   - [Chrome Web Store](https://chrome.google.com/webstore/)
+   - [Firefox Add-ons](https://addons.mozilla.org/)
+   - Busque por **“New Tab Redirect”** e instale.
 
-- **Quick Access**: Easily access the links and actions provided by the buttons directly from your new tab.
-- **Aesthetic**: Enjoy a clean and visually appealing interface every time you open a new tab.
-- **Fast Notes**; Take fast notes and save in your own storage.
+2. **Configure a URL**
+   - Abra as **configurações** da extensão (ícone → ⚙️ *Options*).
+   - No campo “Redirect URL”, insira:
+     ```
+     https://bob-webpage.vercel.app/
+     ```
 
-Now you have successfully set up **bob** as your new tab page!
+3. **Salve e teste**
+   - Clique em “Save”.
+   - Abra uma nova aba — o Bob deve aparecer automaticamente.
 
+---
+
+## 🪄 **Atalhos e Comandos**
+
+Digite `/` no editor para abrir o menu de atalhos, como no Notion.
+
+Alguns exemplos:
+- `/todo` → cria uma lista de tarefas.
+- `/h1`, `/h2` → cria títulos.
+- `/date` → insere a data atual.
+- `/clear` → limpa a área de notas.
+
+![Atalhos](./public/print2.png)
+
+---
+
+## 🧠 **Como Funciona**
+
+Bob é 100% client-side.  
+Tudo é armazenado no **Local Storage** do navegador — nada é enviado para servidores externos.
+
+```text
+┌────────────┐
+│ Digite uma nota │
+└──────┬─────┘
+       ↓
+🧠 Salvo automaticamente no navegador
+```
+
+---
+
+## ⚙️ **Desenvolvimento**
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/gusata/Bob.git
+cd Bob
+npm install
+npm run dev
+```
+
+Abra em:  
+👉 `http://localhost:5173`
+
+---
+
+## 🧑‍💻 **Tecnologias Utilizadas**
+
+- ⚛️ **React.js + Vite**
+- 💅 **TailwindCSS**
+- 🧠 **LocalStorage API**
+- 🔤 **ContentEditable** para o editor leve
