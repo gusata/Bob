@@ -130,6 +130,7 @@ Pull requests são muito bem-vindos!
 3. Commit suas alterações (`git commit -m 'Adiciona nova feature'`)
 4. Envie (`git push origin feature/nome-da-feature`)
 5. Abra um **Pull Request**
+6. Espere a confirmação
 
 ---
 
@@ -144,3 +145,5 @@ Sinta-se livre para usar, modificar e compartilhar.
 
 Desenvolvido por [**Gustavo Galeazzi**](https://github.com/gusata)  
 💡 *"Simplicidade é o último grau de sofisticação."*
+
+
