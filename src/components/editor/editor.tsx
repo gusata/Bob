@@ -15,7 +15,7 @@ const Editor = () => {
     content: '<h3>Try typing here!</h3>',
     editorProps: {
       attributes: {
-        class: 'outline-none leading-tight',
+        class: 'outline-none leading-tight dark:text-gray-100',
       },
     },
   })
@@ -47,11 +47,11 @@ const Editor = () => {
   }
 
   return (
-    <div className="max-w-[60rem] mx-auto">
+    <div className=" dark:text-gray-100 max-w-[60rem] mx-auto">
       {/* Container com tamanho máximo e rolagem */}
       <div className="max-h-[40rem] min-h-[40rem] overflow-auto border border-gray-300 rounded-md p-4">
         <EditorContent
-          className="min-w-full min-h-full prose border-none"
+          className="min-w-full dark:prose-invert dark:text-gray-100 min-h-full prose border-none"
           editor={editor}
         />
       </div>
