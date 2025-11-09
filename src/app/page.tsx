@@ -16,7 +16,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen text-zinc-900 bg-slate-50 dark:bg-zinc-900 dark:text-zinc-100 grid grid-cols-[30rem_1fr] p-8 transition-colors">
+    <div className="min-h-screen text-zinc-900 bg-[#f2f2f2] dark:bg-zinc-900 dark:text-zinc-100 grid grid-cols-[30rem_1fr] p-8 transition-all">
         <Nav />
       <div className="items-center flex flex-col border-r-2 border-zinc-300 dark:border-zinc-700">
         

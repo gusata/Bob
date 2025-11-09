@@ -47,9 +47,9 @@ const Editor = () => {
   }
 
   return (
-    <div className=" dark:text-gray-100 max-w-[60rem] mx-auto">
+    <div className=" dark:text-gray-100 max-w-full pl-7 mx-auto">
       {/* Container com tamanho máximo e rolagem */}
-      <div className="max-h-[40rem] min-h-[40rem] overflow-auto border border-gray-300 rounded-md p-4">
+      <div className="max-h-[40rem] min-h-[40rem] overflow-auto dark:shadow-[6px_6px_12px_#0d0f12,-6px_-6px_12px_#18181f] shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#f2f2f2] dark:bg-zinc-900 bg-[#f8f8f8] border-[#e8e8e8] border-1 rounded-2xl p-4">
         <EditorContent
           className="min-w-full dark:prose-invert dark:text-gray-100 min-h-full prose border-none"
           editor={editor}
