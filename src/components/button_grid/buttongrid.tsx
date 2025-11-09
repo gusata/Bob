@@ -35,22 +35,22 @@ export default function ButtonGrid() {
     <div className="p-8">
       <div className="grid grid-rows grid-cols-3 gap-3 my-0">
       <Link href={'https://youtube.com'}>
-              <Button className="h-32 w-32 rounded-2xl border-zinc-800 border-2" variant="secondary">
+              <Button className="h-32 w-32 rounded-2xl dark:shadow-[6px_6px_12px_#0d0f12,-6px_-6px_12px_#18181f] shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] dark:bg-zinc-900 bg-white border-[#e8e8e8] border-1" variant="secondary">
                 <Play/>
               </Button>
             </Link>
             <Link href={'https://web.whatsapp.com'}>
-              <Button className="h-32 w-32 rounded-2xl border-zinc-800 border-2" variant="secondary">
+              <Button className="h-32 w-32 rounded-2xl dark:shadow-[6px_6px_12px_#0d0f12,-6px_-6px_12px_#18181f] shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] dark:bg-zinc-900 bg-white border-[#e8e8e8] border-1" variant="secondary">
                 <MessageCircle/>
               </Button>
             </Link>
             <Link href={'https://gmail.com'}>
-              <Button className="h-32 w-32 rounded-2xl border-zinc-800 border-2" variant="secondary">
+              <Button className="h-32 w-32 rounded-2xl dark:shadow-[6px_6px_12px_#0d0f12,-6px_-6px_12px_#18181f] shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] dark:bg-zinc-900 bg-white border-[#e8e8e8] border-1" variant="secondary">
                 <Mail/>
               </Button>
             </Link>
             <Link href={'https://github.com'}>
-              <Button className="h-32 w-32 rounded-2xl border-zinc-800 border-2" variant="secondary">
+              <Button className="h-32 w-32 rounded-2xl dark:shadow-[6px_6px_12px_#0d0f12,-6px_-6px_12px_#18181f] shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] dark:bg-zinc-900 bg-white border-[#e8e8e8] border-1" variant="secondary">
                 <Github/>
               </Button>
             </Link>
